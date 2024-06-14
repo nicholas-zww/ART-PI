@@ -795,7 +795,10 @@ int finsh_system_init(void)
         rt_thread_startup(tid);
     return 0;
 }
+
+#ifndef PKG_USING_QBOOT
 INIT_APP_EXPORT(finsh_system_init);
+#endif
 
 #endif /* RT_USING_FINSH */
 
