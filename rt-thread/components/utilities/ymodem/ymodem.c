@@ -326,6 +326,8 @@ static rt_err_t _rym_trans_data(
     if (ctx->stage == RYM_STAGE_ESTABLISHED && ctx->buf[1] == 0x00)
     {
         *code = RYM_CODE_NONE;
+        _rym_putchar(ctx, RYM_CODE_ACK);
+        _rym_putchar(ctx, RYM_CODE_C);
         return RT_EOK;
     }
 
