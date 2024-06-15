@@ -48,8 +48,8 @@ extern struct fal_flash_dev nor_flash1;
     {FAL_PART_MAGIC_WORD, "bt_image",   NOR_FLASH_DEV_NAME,     512*1024,      512*1024, 0}, \
     {FAL_PART_MAGIC_WORD, "download",   NOR_FLASH_DEV_NAME,    1024*1024,   2*1024*1024, 0}, \
     {FAL_PART_MAGIC_WORD, "easyflash",  NOR_FLASH_DEV_NAME,  3*1024*1024,   1*1024*1024, 0}, \
-    {FAL_PART_MAGIC_WORD, "filesystem", NOR_FLASH_DEV_NAME,  4*1024*1024,  10*1024*1024, 0}, \
-    {FAL_PART_MAGIC_WORD, "factory",    NOR_FLASH_DEV_NAME, 14*1024*1024,   2*1024*1024, 0}, \
+    {FAL_PART_MAGIC_WORD, "factory",    NOR_FLASH_DEV_NAME,  4*1024*1024,   2*1024*1024, 0}, \
+    {FAL_PART_MAGIC_WORD, "filesystem", NOR_FLASH_DEV_NAME,  6*1024*1024,  10*1024*1024, 0}, \
     {FAL_PART_MAGIC_WORD, "app",        QSPI_FLASH_DEV_NAME,           0,  8*1024*1024, 0},   \
 }
 #endif /* FAL_PART_HAS_TABLE_CFG */
